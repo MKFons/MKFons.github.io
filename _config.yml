@@ -68,6 +68,6 @@ theme: material
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github      //改成github
-  repository: https://github.com/MKFons/mkfons.github.io    //改成自己的用户名
+  type: git
+  repository: https://github.com/MKFons/mkfons.github.io
   branch: master   
