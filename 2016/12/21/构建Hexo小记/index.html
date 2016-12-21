@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        archive_a | Fons
+        构建Hexo小记 | Fons
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://fons.xyz">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="archive_a | Fons">
+    <meta property="og:title" content="构建Hexo小记 | Fons">
     <meta property="og:description" content="null">
     
      <!--[if lte IE 9]>
@@ -194,151 +194,221 @@
                 </button>
 				
 				
-                <!-- Index Module -->
-<div class="material-index mdl-grid">
-	
-    <div class="locate-thumbnail-symbol"></div>
+                <!-- Post TOC -->
+
     
-    
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前提"><span class="post-toc-number">1.</span> <span class="post-toc-text">前提</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#环境配置"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">环境配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正文"><span class="post-toc-number">2.</span> <span class="post-toc-text">正文</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Hexo"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">安装 Hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#部署"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">部署</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主题"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">主题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#github部署配置"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">github部署配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#绑定域名"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">绑定域名</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#小问题"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">小问题</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#TODO-多台PC间进行部署和发表-待验证"><span class="post-toc-number">3.</span> <span class="post-toc-text">TODO: 多台PC间进行部署和发表(待验证)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参考文档"><span class="post-toc-number">4.</span> <span class="post-toc-text">参考文档</span></a></li></ol>
 		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/12/21/构建Hexo小记/">构建Hexo小记</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            记录一些在搭hexo站点的时候所遇到的问题和总结.
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/12/21/构建Hexo小记/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="MK's avatar">
-            </div>
-            <div>
-                <strong>MK</strong>
-                <span>12月 21, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/12/21/hello-world/">Hello World</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/12/21/hello-world/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="MK's avatar">
-            </div>
-            <div>
-                <strong>MK</strong>
-                <span>12月 21, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-    
-	
-		<script>
+				<script>
     
     var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
     
-    var locatePost = $(".locate-thumbnail-symbol").next();
-    for(var i=0; i < 10; i++){
-        
-        randomNum = Math.floor(Math.random() * 5 + 1);
-        
-        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')')
-        
-        locatePost = locatePost.next();
-    }
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
     
 </script>
 
+		
+	
+        <p class="article-headline-p">
+            构建Hexo小记
+        </p>
+    </div>
+
 	
 
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>MK</strong>
+        <span>12月 21, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Hexo/">Hexo</a>
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=构建Hexo小记&url=http://fons.xyz//2016/12/21/构建Hexo小记/index.html&via=MK" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://fons.xyz//2016/12/21/构建Hexo小记/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=构建Hexo小记&url=http://fons.xyz//2016/12/21/构建Hexo小记/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
 </div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<p>记录一些在搭hexo站点的时候所遇到的问题和总结.</p>
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ul>
+<li>Git</li>
+<li>Node.js</li>
+<li>Github上一个以自己用户名为名的仓库</li>
+</ul>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<p>从npm安装hexo命令行工具<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>在指定文件夹中新建所需要的文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;folder&gt;</div><div class="line">cd &lt;folder&gt;</div><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<p>在_config.yml文件内修改网站对应配置，参考 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">配置 | Hexo</a></p>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>本地启动，在<a href="http://localhost:4000/" target="_blank" rel="external">localhost:4000</a>进行查看<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo server</div><div class="line"># 指定从其它端口启动</div><div class="line">hexo server -p 2333</div></pre></td></tr></table></figure></p>
+<p>生成静态文件，并进行部署<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 生成静态文件</div><div class="line">hexo generate</div><div class="line"># 部署网站</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
+<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>将主题文件夹拷到themes文件夹下,并在_config.yml文件内的theme属性改成对应的主题文件夹名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: material</div></pre></td></tr></table></figure></p>
+<h3 id="github部署配置"><a href="#github部署配置" class="headerlink" title="github部署配置"></a>github部署配置</h3><p>安装git仓库部署工具<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>在_config.yml文件内做对应修改(示例内的注释需删掉)</p>
+<pre><code>deploy:
+  type: git      //git如果不行，可尝试改成github
+  repository: https://github.com/MKFons/mkfons.github.io   //改成自己的用户名
+  branch: master
+</code></pre><p>执行hexo deploy会自动推送到你部署的仓库内</p>
+<p>更多指令，参考 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">指令 | Hexo</a></p>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p>新建一个CNAME文件，不带后缀，添加你的域名信息（不加http://） </p>
+<p>在域名的解析服务商那里进行设置</p>
+<ul>
+<li>添加两条A记录，主机记录@，记录类型为A，记录值是分别是192.30.252.153和IP192.30.252.154</li>
+<li>添加一条CNAME记录，主机记录www，记录类型为CNAME，记录值是yourname.github.io(你的github二级域名)</li>
+</ul>
+<h3 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h3><ul>
+<li>Windows上hexo s可能出现端口被占用(福昕阅读器会占用4000端口)，但是并没有报错，可切换端口运行</li>
+<li>linux上hexo s报错，使用root用户或者加sudo运行即可</li>
+</ul>
+<h2 id="TODO-多台PC间进行部署和发表-待验证"><a href="#TODO-多台PC间进行部署和发表-待验证" class="headerlink" title="TODO: 多台PC间进行部署和发表(待验证)"></a>TODO: 多台PC间进行部署和发表(待验证)</h2><ul>
+<li>hexo init初始化后，直接git init本地新建一个仓库，再添加github上的远程库</li>
+<li>将包含node_module在内全部提交到github仓库上</li>
+<li>待测：不提交node_module，可在本地复制其他hexo文件夹内的node_module过来或者npm install</li>
+</ul>
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
+<li><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">Hexo官网文档</a></li>
+<li><a href="http://www.cnblogs.com/liulangmao/p/4323064.html" target="_blank" rel="external">使用hexo搭建github.io博客</a></li>
+</ul>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+                    
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/12/21/hello-world/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
 				
 				
